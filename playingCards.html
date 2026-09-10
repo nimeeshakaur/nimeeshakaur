@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playing Cards Design</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Navigation (same as index) -->
+<nav>
+  <a href="index.html" class="nav-logo">NK</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects" class="active">Work</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#about">About</a>
+  <a href="index.html#projects">Work</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<!-- ── Page Hero ── -->
+<div class="page-hero">
+  <div class="bg-grid"></div>
+  <!-- Warm red/gold glow echoing the card colors -->
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 80% 60%, rgba(200,80,40,0.07) 0%, rgba(200,169,110,0.04) 40%, transparent 70%);pointer-events:none;"></div>
+
+  <div class="page-hero-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="index.html#projects">Work</a>
+      <span>/</span>
+      <span style="color:var(--text)">Playing Cards Design</span>
+    </div>
+
+    <!-- Meta badges -->
+    <div class="project-meta">
+      <span class="meta-badge accent">01</span>
+      <span class="meta-badge">Print Design</span>
+      <span class="meta-badge">Illustration</span>
+      <span class="meta-badge">2026</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="page-title">Playing<br><em>Cards</em></h1>
+    <p class="page-subtitle">
+      A fully custom deck of 54 playing cards designed under the <strong style="color:var(--accent2)">Artful Bytes</strong> brand.
+      Each suit carries its own colour world — red and gold on the face cards, ivory and crimson on the backs —
+      unified by intricate line-work and hand-crafted character illustrations.
+    </p>
+
+    <!-- Tools -->
+    <div class="tools-strip">
+      <span class="tool-chip">Adobe Illustrator</span>
+      <span class="tool-chip">Adobe Photoshop</span>
+      <span class="tool-chip">Print Layout</span>
+      <span class="tool-chip">Custom Illustration</span>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── Gallery ── -->
+<div class="gallery-section">
+  <div class="container" style="margin-bottom:2rem;">
+    <p class="section-label reveal">Project Gallery</p>
+    <h2 class="section-title reveal" style="margin-bottom:0.5rem;">Every card,<br><em style="font-style:italic;color:var(--accent)">a story.</em></h2>
+    <p class="reveal" style="color:var(--muted);font-size:0.88rem;max-width:480px;line-height:1.7;margin-bottom:0;">
+      Click any image to view full size.
+    </p>
+  </div>
+
+  <!-- Asymmetric masonry grid -->
+  <div class="gallery-grid">
+
+    <!-- Wide hero shot — fanned cards on table -->
+    <div class="gallery-item gi-1 reveal" data-src="images/PC1.jpeg">
+      <img src="images/PC1.jpeg" alt="Playing Cards">
+      <div class="overlay">
+        <span class="overlay-text">The full fan — red &amp; gold edition</span>
+      </div>
+    </div>
+
+    <!-- Tall — box closeup -->
+    <div class="gallery-item gi-2 reveal reveal-delay-1" data-src="images/PC3.jpeg">
+      <img src="images/PC3.jpeg" alt="Playing Cards">
+      <div class="overlay">
+        <span class="overlay-text">Box design — crimson &amp; gold foil</span>
+      </div>
+    </div>
+
+    <!-- Tall — card backs / joker -->
+    <div class="gallery-item gi-3 reveal reveal-delay-2" data-src="images/PC4.jpeg">
+      <img src="images/PC4.jpeg" alt="Playing Cards">
+      <div class="overlay">
+        <span class="overlay-text">Card backs &amp; Joker design</span>
+      </div>
+    </div>
+
+    <!-- Wide — scattered cards overhead -->
+    <div class="gallery-item gi-4 reveal reveal-delay-3" data-src="images/PC2.jpeg">
+      <img src="images/PC2.jpeg" alt="Playing Cards">
+      <div class="overlay">
+        <span class="overlay-text">Number &amp; face cards </span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── Project Info ── -->
+<div class="project-info-section">
+  <div class="info-grid">
+
+    <!-- Left — story -->
+    <div class="info-block reveal">
+      <p class="section-label">The Brief</p>
+      <h3>Designing a deck<br>from scratch</h3>
+      <p>
+        The challenge was to create a complete, print-ready playing card deck under the Artful Bytes brand identity —
+        54 unique cards, two distinct colourways, custom suit illustrations, and bespoke face-card characters.
+      </p>
+      <p>
+        The result is a deck that reads as premium and bold: a deep crimson/gold palette for the face-up side
+        that feels festive and luxurious, paired with an ivory/magenta pinstripe reverse that gives a cleaner,
+        more classical feel.
+      </p>
+      <p>
+        Every suit symbol was redrawn as a hanging, layered illustration — hearts, diamonds, clubs and spades
+        each suspended from a vertical line, giving each card a distinctive decorative rhythm.
+      </p>
+
+      <!-- Stat highlights -->
+      <div class="stats-row" style="margin-top:2rem;">
+        <div class="stat-box">
+          <span class="stat-num">54</span>
+          <span class="stat-label">Cards Designed</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Colourways</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Custom Suits</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right — details list -->
+    <div class="info-block reveal reveal-delay-2">
+      <p class="section-label">Project Details</p>
+      <h3>Specifications</h3>
+      <ul class="detail-list">
+        <li>
+          <span class="dl-key">Category</span>
+          <span class="dl-val">Print Design · Illustration</span>
+        </li>
+        <li>
+          <span class="dl-key">Brand</span>
+          <span class="dl-val">Artful Bytes</span>
+        </li>
+        <li>
+          <span class="dl-key">Software</span>
+          <span class="dl-val">Adobe Illustrator, Photoshop</span>
+        </li>
+        <li>
+          <span class="dl-key">Deliverables</span>
+          <span class="dl-val">Print-ready files, Box dieline</span>
+        </li>
+        <li>
+          <span class="dl-key">Palette</span>
+          <span class="dl-val">Crimson · Gold · Ivory · Magenta</span>
+        </li>
+        <li>
+          <span class="dl-key">Year</span>
+          <span class="dl-val">2026</span>
+        </li>
+      </ul>
+
+      <!-- Tags -->
+      <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.6rem;">
+        <span class="tag">Illustration</span>
+        <span class="tag">Print Layout</span>
+        <span class="tag">Brand Extension</span>
+        <span class="tag">Character Design</span>
+        <span class="tag">Packaging</span>
+        <span class="tag">Artful Bytes</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── Next Project CTA ── -->
+<div class="next-project">
+  <div class="next-inner">
+    <div class="reveal">
+      <p class="next-label">Next Project</p>
+      <h2 class="next-title">Visiting Card Design →</h2>
+    </div>
+    <a href="index.html#projects" class="btn btn-outline reveal reveal-delay-2">Back to All Work</a>
+  </div>
+</div>
+
+
+<!-- ── Lightbox ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Enlarged view">
+</div>
+
+
+<footer>
+  <p>© 2026 <a href="index.html">Nimeesha Kaur</a> · Graphic Designer · B.Des Multimedia</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
